@@ -13,8 +13,11 @@ class PagesController extends Controller
     //
     public function home()
     {
+        $people = ['Lopa', 'Abir', 'Partho'];
+
+        return view( 'welcome', compact('people') );
     	
-		return view( 'welcome' );
+		/*return view( 'welcome' );*/
 
     }
 
@@ -22,7 +25,9 @@ class PagesController extends Controller
     {
     	$people = ['Lopa', 'Abir', 'Partho'];
 
-		return view( 'pages.about', compact('people') );
+        return view('about');
+
+		/*return view( 'pages.about', compact('people') );*/
     }
 
 

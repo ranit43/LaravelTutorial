@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 /*Route::get('about', function() {
 	//return ' MuAboutPage';
@@ -22,5 +22,6 @@ Route::get('/', function () {
 	return view( 'pages.about', compact('people') );
 });
 */
-Route::get('about', 'PagesController@about' );
 Route::get('/', 'PagesController@home'); 
+
+Route::get('about', 'PagesController@about' );
