@@ -14,16 +14,13 @@ class PagesController extends Controller
     public function home()
     {
         $people = ['Lopa', 'Abir', 'Partho'];
-
         return view( 'welcome', compact('people') );
-    	
 		/*return view( 'welcome' );*/
-
     }
 
     public function about()
     {
-    	$people = ['Lopa', 'Abir', 'Partho'];
+    	/*$people = ['Lopa', 'Abir', 'Partho'];*/
 
         return view('about');
 
